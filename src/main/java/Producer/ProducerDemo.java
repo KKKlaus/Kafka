@@ -22,7 +22,7 @@ public class ProducerDemo {
 
     // create a producer record
     ProducerRecord<String, String> record =
-            new ProducerRecord<String, String>("first topic", "hello world");
+            new ProducerRecord<String, String>("first_topic", "hello world");
 
     // step3: send data - asynchronous
     producer.send(record);
