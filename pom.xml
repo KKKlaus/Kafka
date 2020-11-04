@@ -7,6 +7,18 @@
     <groupId>org.KafkaStarted</groupId>
     <artifactId>com.github.ZihaoLin.Kafka</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>8</source>
+                    <target>8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
     <dependencies>
         <dependency>
@@ -28,6 +40,11 @@
             <groupId>com.google.googlejavaformat</groupId>
             <artifactId>google-java-format</artifactId>
             <version>1.9</version>
+        </dependency>
+        <dependency>
+            <groupId>com.twitter</groupId>
+            <artifactId>hbc-core</artifactId> <!-- or hbc-twitter4j -->
+            <version>2.2.0</version> <!-- or whatever the latest version is -->
         </dependency>
     </dependencies>
 
